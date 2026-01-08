@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c28ec1a8c036f41af6ad4cd6fced20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RotateCamera
-  rotationSpeed: 50
+  rotationSpeed: 75
 --- !u!1 &428084723
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   enemyPrefab: {fileID: 7661214692912678332, guid: b198c531f7b287246b022c362ae032c1, type: 3}
+  powerupPrefab: {fileID: 8555702518002885643, guid: dd13a9311c387374a8d11600256477d5, type: 3}
+  enemyCount: 0
+  waveNumber: 1
 --- !u!4 &428084725
 Transform:
   m_ObjectHideFlags: 0
@@ -817,63 +820,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1656aec7f2b3ffe45a91801f58b00253, type: 3}
---- !u!1001 &5376518192847930340
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1049945823881356668, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8555702518002885643, guid: dd13a9311c387374a8d11600256477d5, type: 3}
-      propertyPath: m_Name
-      value: PowerUp
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dd13a9311c387374a8d11600256477d5, type: 3}
 --- !u!1001 &7305732181041295649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -946,5 +892,4 @@ SceneRoots:
   - {fileID: 191872165}
   - {fileID: 404370046}
   - {fileID: 428084725}
-  - {fileID: 5376518192847930340}
   - {fileID: 1409750349}
